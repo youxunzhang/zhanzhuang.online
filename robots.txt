@@ -1,0 +1,68 @@
+# 站桩功法学习平台 - Robots.txt
+# https://zhanzhuang.com/robots.txt
+
+# 允许所有搜索引擎抓取
+User-agent: *
+Allow: /
+
+# 特定搜索引擎优化
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 2
+
+User-agent: Sogou web spider
+Allow: /
+Crawl-delay: 2
+
+# 禁止访问的目录和文件
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /*.log$
+Disallow: /*.tmp$
+Disallow: /search?*
+Disallow: /*?utm_*
+Disallow: /*?sid=*
+Disallow: /*?sessionid=*
+
+# 允许重要资源
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
+Allow: /style.css
+Allow: /script.js
+Allow: /news.js
+Allow: /favicon.ico
+Allow: /sitemap.xml
+
+# 网站地图位置
+Sitemap: https://zhanzhuang.com/sitemap.xml
+Sitemap: https://zhanzhuang.com/sitemap-news.xml
+Sitemap: https://zhanzhuang.com/sitemap-images.xml
+
+# 主机信息
+Host: zhanzhuang.com
+
+# 抓取延迟（默认）
+Crawl-delay: 1
+
+# 请求频率限制
+Request-rate: 1/1s
+
+# 访问时间（24小时制）
+Visit-time: 0800-2000 

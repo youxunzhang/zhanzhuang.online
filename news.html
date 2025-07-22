@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>养生资讯 - 站桩功法学习平台</title>
+    <meta name="description" content="站桩养生资讯中心，提供最新的站桩知识、健康养生指导和传统功法分享。专业的站桩教学文章，涵盖入门基础、进阶技巧和科学研究。">
+    <meta name="keywords" content="站桩资讯,养生知识,健康资讯,功法指导,站桩新闻,传统养生,中医养生,气功资讯,太极桩,内功修炼,健康生活">
+    <meta name="author" content="站桩功法学习平台">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zhanzhuang.com/news.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="养生资讯 - 站桩功法学习平台">
+    <meta property="og:description" content="站桩养生资讯中心，提供最新的站桩知识和健康养生指导">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zhanzhuang.com/news.html">
+    <meta property="og:image" content="https://zhanzhuang.com/images/news-banner.jpg">
+    
+    <!-- 结构化数据 - 新闻网站 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "养生资讯",
+      "description": "站桩养生资讯中心",
+      "url": "https://zhanzhuang.com/news.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "站桩养生资讯",
+        "numberOfItems": 10,
+        "itemListElement": [
+          {
+            "@type": "Article",
+            "position": 1,
+            "name": "站桩入门：新手必知的基础要领",
+            "url": "https://zhanzhuang.com/news/zhanzhuang-basics.html"
+          }
+        ]
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://zhanzhuang.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "养生资讯",
+            "item": "https://zhanzhuang.com/news.html"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-gray': '#f5f5f7',
+                        'apple-blue': '#007aff',
+                        'apple-dark': '#1d1d1f',
+                        'apple-light': '#f2f2f7'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-apple-light">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-apple-blue hover:text-blue-600 transition">站桩功法</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-apple-blue transition">返回首页</a>
+                    <a href="index.html#features" class="text-gray-600 hover:text-apple-blue transition">功能特色</a>
+                    <a href="index.html#pricing" class="text-gray-600 hover:text-apple-blue transition">价格方案</a>
+                    <a href="index.html#faq" class="text-gray-600 hover:text-apple-blue transition">常见问题</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-apple-blue to-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">养生资讯中心</h1>
+            <p class="text-xl opacity-90 mb-8">专业的站桩知识和健康养生资讯，助您掌握正确的养生之道</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-white text-apple-blue px-6 py-2 rounded-full hover:bg-gray-100 transition" onclick="filterNews('all')">全部</button>
+                <button class="bg-white/20 text-white px-6 py-2 rounded-full hover:bg-white/30 transition" onclick="filterNews('basic')">基础入门</button>
+                <button class="bg-white/20 text-white px-6 py-2 rounded-full hover:bg-white/30 transition" onclick="filterNews('health')">健康养生</button>
+                <button class="bg-white/20 text-white px-6 py-2 rounded-full hover:bg-white/30 transition" onclick="filterNews('advanced')">进阶技巧</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News List -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 侧边栏 -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-xl p-6 shadow-sm sticky top-24">
+                        <h3 class="text-xl font-bold mb-4 text-apple-dark">热门话题</h3>
+                        <div class="space-y-3">
+                            <a href="#" class="block text-gray-600 hover:text-apple-blue transition text-sm"># 站桩入门指南</a>
+                            <a href="#" class="block text-gray-600 hover:text-apple-blue transition text-sm"># 心血管健康</a>
+                            <a href="#" class="block text-gray-600 hover:text-apple-blue transition text-sm"># 四季养生</a>
+                            <a href="#" class="block text-gray-600 hover:text-apple-blue transition text-sm"># 免疫力提升</a>
+                            <a href="#" class="block text-gray-600 hover:text-apple-blue transition text-sm"># 压力缓解</a>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-xl font-bold mb-4 text-apple-dark">最新更新</h3>
+                            <div class="text-sm text-gray-600">
+                                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                    <span>今日更新</span>
+                                    <span class="text-apple-blue font-semibold">3篇</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                    <span>本周更新</span>
+                                    <span class="text-apple-blue font-semibold">15篇</span>
+                                </div>
+                                <div class="flex justify-between items-center py-2">
+                                    <span>本月更新</span>
+                                    <span class="text-apple-blue font-semibold">48篇</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 主内容区 -->
+                <div class="lg:col-span-2">
+                    <div id="newsList" class="space-y-6">
+                        <!-- 动态生成的新闻列表将在这里显示 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Detail Modal -->
+    <div id="newsDetailModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="sticky top-0 bg-white border-b p-6 flex justify-between items-center">
+                <h2 id="detailTitle" class="text-2xl font-bold text-apple-dark"></h2>
+                <button onclick="closeNewsDetail()" class="text-gray-500 hover:text-gray-700 p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6">
+                <div id="detailDate" class="text-sm text-apple-blue mb-4"></div>
+                <div id="detailContent" class="prose max-w-none text-gray-700"></div>
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-4">
+                            <button class="flex items-center text-gray-500 hover:text-apple-blue transition">
+                                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                                喜欢
+                            </button>
+                            <button class="flex items-center text-gray-500 hover:text-apple-blue transition">
+                                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+                                </svg>
+                                分享
+                            </button>
+                        </div>
+                        <a href="index.html" class="bg-apple-blue hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition">
+                            返回首页
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-apple-dark text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">站桩功法</h3>
+                    <p class="text-gray-400 mb-4">专业的站桩学习平台，助您掌握传统养生功法。</p>
+                    <a href="index.html" class="text-apple-blue hover:text-blue-400 transition">← 返回首页</a>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">相关链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html#features" class="hover:text-white transition">功能特色</a></li>
+                        <li><a href="index.html#pricing" class="hover:text-white transition">价格方案</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-white transition">学员评价</a></li>
+                        <li><a href="index.html#faq" class="hover:text-white transition">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">联系我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>客服热线：400-123-4567</li>
+                        <li>邮箱：service@zhanzhuang.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 站桩功法学习平台. 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="news.js"></script>
+</body>
+</html> 
