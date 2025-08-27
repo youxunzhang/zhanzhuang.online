@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenu.innerHTML = `
         <a href="#features" onclick="closeMobileMenu()">功能特色</a>
         <a href="#how-it-works" onclick="closeMobileMenu()">学习方法</a>
-        <a href="#pricing" onclick="closeMobileMenu()">价格方案</a>
         <a href="#news" onclick="closeMobileMenu()">养生资讯</a>
         <a href="#testimonials" onclick="closeMobileMenu()">学员评价</a>
         <a href="#faq" onclick="closeMobileMenu()">常见问题</a>
