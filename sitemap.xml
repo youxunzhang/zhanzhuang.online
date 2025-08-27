@@ -116,13 +116,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- 价格页面 -->
-  <url>
-    <loc>https://zhanzhuang.com/pricing.html</loc>
-    <lastmod>2024-01-01T07:00:00+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
 
   <!-- 关于我们 -->
   <url>

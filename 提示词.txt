@@ -2,7 +2,7 @@
 
 你要做的网站域名是一个漂亮的网站
 
-完整的header、hero、testimonials、faq、features、pricing、how it works、footer模块
+完整的header、hero、testimonials、faq、features、how it works、footer模块
 
 关键词是站桩
 

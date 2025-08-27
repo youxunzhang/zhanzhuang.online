@@ -77,17 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 价格卡片交互
-    const pricingCards = document.querySelectorAll('.pricing-card');
-    pricingCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.05)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
-    });
+
 
     // 特色功能卡片动画
     const featureCards = document.querySelectorAll('.feature-card');
