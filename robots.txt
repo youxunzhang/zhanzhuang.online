@@ -1,5 +1,5 @@
 # 站桩功法学习平台 - Robots.txt
-# https://zhanzhuang.com/robots.txt
+# https://zhanzhuang.online/robots.txt
 
 # 允许所有搜索引擎抓取
 User-agent: *
@@ -51,12 +51,10 @@ Allow: /favicon.ico
 Allow: /sitemap.xml
 
 # 网站地图位置
-Sitemap: https://zhanzhuang.com/sitemap.xml
-Sitemap: https://zhanzhuang.com/sitemap-news.xml
-Sitemap: https://zhanzhuang.com/sitemap-images.xml
+Sitemap: https://zhanzhuang.online/sitemap.xml
 
 # 主机信息
-Host: zhanzhuang.com
+Host: zhanzhuang.online
 
 # 抓取延迟（默认）
 Crawl-delay: 1
